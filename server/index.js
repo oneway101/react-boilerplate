@@ -28,9 +28,4 @@ app.use((err, req, res, next) => {
 })
 
 
-// Start the server and listen for requests
-const PORT = process.env.PORT || 3000;
-
-app.listen(PORT, () => {
-  console.log(`listening on port http://localhost:${PORT}`);
-});
+module.exports = app
