@@ -1,9 +1,12 @@
+import '../public/style.scss';
+
 import React from 'react'
 import ReactDOM from 'react-dom'
-import store from './store'
 import {Provider} from 'react-redux'
 import {BrowserRouter as Router} from 'react-router-dom'
-import Root from './components'
+
+import store from './store'
+import Root from './components/root'
 
 ReactDOM.render(
   <Provider store={store}>
@@ -12,4 +15,4 @@ ReactDOM.render(
     </Router>
   </Provider>,
   document.getElementById('app')
-);
+)
